@@ -1,0 +1,9 @@
+{
+    "security": {
+      "url": "http://localhost:8081/auth",
+      "realm": "IKEJAS",
+      "clientId": "ikejas"
+    },
+    "CATALOGOS" : {
+    }
+  }
