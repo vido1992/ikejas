@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import listapreguntas from './listapreguntas.json';
 
 @Component({
   selector: 'app-preguntas',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./preguntas.component.css']
 })
 export class PreguntasComponent implements OnInit {
+  // tslint:disable-next-line:ban-types
+  preguntasList: any = listapreguntas;
 
   constructor() { }
 
@@ -13,3 +16,4 @@ export class PreguntasComponent implements OnInit {
   }
 
 }
+

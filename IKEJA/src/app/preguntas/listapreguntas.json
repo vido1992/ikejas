@@ -1,0 +1,26 @@
+[
+    {
+      "idquestion": "1",
+      "namequestion": "Juan Perez",
+      "question": "Hola quisiera saber como puedo editar mi pregunta en esta pagina"
+    },
+
+    {
+      "idquestion": "2",
+      "namequestion": "Isaac Montenegro",
+      "question": "Hola quisiera saber como puedo editar mi pregunta en esta pagina"
+    },
+
+    {
+      "idquestion": "3",
+      "namequestion": "Javier Donozo",
+      "question": "Hola quisiera saber como puedo editar mi pregunta en esta pagina"
+    },
+
+    {
+      "idquestion": "4",
+      "namequestion": "David Delgado",
+      "question": "Hola quisiera saber como puedo editar mi pregunta en esta pagina"
+    }
+]
+
