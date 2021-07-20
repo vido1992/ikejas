@@ -10,6 +10,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { PreguntasComponent } from './preguntas/preguntas.component';
 import { CarrilImagenesComponent } from './carril-imagenes/carril-imagenes.component';
+import { PreguntaNuevaComponent } from './pregunta-nueva/pregunta-nueva.component';
 
 function initilizeKeycloak(keycloak: KeycloakService) {
   return () => keycloak.init({
@@ -24,7 +25,8 @@ function initilizeKeycloak(keycloak: KeycloakService) {
     MenuComponent,
     HomeComponent,
     PreguntasComponent,
-    CarrilImagenesComponent
+    CarrilImagenesComponent,
+    PreguntaNuevaComponent
   ],
   imports: [
     BrowserModule,
