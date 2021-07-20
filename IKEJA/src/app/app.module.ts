@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 
 import { HomeComponent } from './home/home.component';
+import { PreguntasComponent } from './preguntas/preguntas.component';
+import { CarrilImagenesComponent } from './carril-imagenes/carril-imagenes.component';
 
 function initilizeKeycloak(keycloak: KeycloakService) {
   return () => keycloak.init({
@@ -20,7 +22,9 @@ function initilizeKeycloak(keycloak: KeycloakService) {
   declarations: [
     AppComponent,
     MenuComponent,
-    HomeComponent
+    HomeComponent,
+    PreguntasComponent,
+    CarrilImagenesComponent
   ],
   imports: [
     BrowserModule,
