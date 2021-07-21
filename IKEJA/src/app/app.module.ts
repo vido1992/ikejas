@@ -11,12 +11,14 @@ import { HomeComponent } from './home/home.component';
 import { PreguntasComponent } from './preguntas/preguntas.component';
 import { CarrilImagenesComponent } from './carril-imagenes/carril-imagenes.component';
 
+import {HttpClientModule} from '@angular/common/http';
+
 function initilizeKeycloak(keycloak: KeycloakService) {
   return () => keycloak.init({
     config: environment.keycloak
-  })
+  });
 }
- 
+
 
 @NgModule({
   declarations: [
@@ -29,10 +31,11 @@ function initilizeKeycloak(keycloak: KeycloakService) {
   imports: [
     BrowserModule,
     AppRoutingModule,
-    KeycloakAngularModule
+    KeycloakAngularModule,
+    HttpClientModule
   ],
   providers: [{
-    provide:APP_INITIALIZER,
+    provide: APP_INITIALIZER,
     useFactory: initilizeKeycloak,
     multi: true,
     deps: [KeycloakService]

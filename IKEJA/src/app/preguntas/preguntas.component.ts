@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { JsonPreguntasService } from '../json-preguntas.service';
 
 @Component({
   selector: 'app-preguntas',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PreguntasComponent implements OnInit {
 
-  constructor() { }
+  constructor( private jsonPreguntasService: JsonPreguntasService) { }
 
   ngOnInit(): void {
+    this.jsonPreguntasService.getLocalData().subscribe(data => {
+      console.log('data local> ');
+      console.log(data);
+    });
+
   }
+
+
+
 
 }

@@ -1,0 +1,27 @@
+{
+  "preguntas":
+  [
+
+    {
+      "id":"1",
+      "nombre": "David",
+      "fecha":  "01/05/2021",
+      "pregunta":"hola como puedo hacer esto?"
+    },
+    {
+      "id":"2",
+      "nombre":"Juan",
+      "fecha": "11/04/2021",
+      "pregunta":"hola como puedo hacer esto?"
+    },
+    {
+      "id":"3",
+      "nombre":"Alex",
+      "fecha": "19/06/2021",
+      "pregunta":"hola como puedo hacer esto?"
+    }
+
+  ]
+
+
+}
