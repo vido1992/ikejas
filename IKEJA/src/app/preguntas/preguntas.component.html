@@ -1,1 +1,39 @@
-<p>preguntas works!</p>
+<br><br><br><br>
+
+<div *ngFor="let item of preg" class="card container" style="width: 18rem;">
+  <img src="./assets/Imagenes/pantera.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{item.nombre}}</h5>
+    <h7 class="card-title">{{item.fecha}}</h7>
+    <p class="card-text">{{item.pregunta}}</p>
+    <a href="#" class="btn btn-primary">RESPONDER</a>
+  </div>
+</div>
+<br><br>
+
+
+
+
+
+
+
+<table>
+  <thead>
+    <th>Id</th>
+  <th>Nombre</th>
+    <th>Fecha</th>
+    <th>Comentario</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of preg" >
+    <td>{{item.id}}</td>
+    <td>{{item.nombre}}</td>
+    <td>{{item.fecha}}</td>
+    <td>{{item.pregunta}}</td>
+  </tr>
+
+  </tbody>
+</table>
+
+
+

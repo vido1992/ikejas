@@ -7,13 +7,14 @@ import { JsonPreguntasService } from '../json-preguntas.service';
   styleUrls: ['./preguntas.component.css']
 })
 export class PreguntasComponent implements OnInit {
-
+  preg: object = [];
   constructor( private jsonPreguntasService: JsonPreguntasService) { }
 
   ngOnInit(): void {
     this.jsonPreguntasService.getLocalData().subscribe(data => {
       console.log('data local> ');
       console.log(data);
+      this.preg = Object.values(data);
     });
 
   }

@@ -12,6 +12,9 @@ import { PreguntasComponent } from './preguntas/preguntas.component';
 import { CarrilImagenesComponent } from './carril-imagenes/carril-imagenes.component';
 
 import {HttpClientModule} from '@angular/common/http';
+import {CommonModule} from '@angular/common';
+
+
 
 function initilizeKeycloak(keycloak: KeycloakService) {
   return () => keycloak.init({
@@ -32,7 +35,8 @@ function initilizeKeycloak(keycloak: KeycloakService) {
     BrowserModule,
     AppRoutingModule,
     KeycloakAngularModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule,
   ],
   providers: [{
     provide: APP_INITIALIZER,
