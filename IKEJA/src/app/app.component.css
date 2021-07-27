@@ -293,3 +293,8 @@ svg#clouds {
     visibility: hidden;
   }
 }
+
+.card-preguntas{
+  width: 30%;
+  float: left;
+}

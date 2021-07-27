@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { JsonPreguntasService } from '../json-preguntas.service';
-
 @Component({
   selector: 'app-preguntas',
   templateUrl: './preguntas.component.html',
@@ -15,9 +14,11 @@ export class PreguntasComponent implements OnInit {
       console.log('data local> ');
       console.log(data);
       this.preg = Object.values(data);
+
     });
 
   }
+
 
 
 
