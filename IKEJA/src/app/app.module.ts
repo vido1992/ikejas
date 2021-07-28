@@ -12,12 +12,19 @@ import { PreguntasComponent } from './preguntas/preguntas.component';
 import { CarrilImagenesComponent } from './carril-imagenes/carril-imagenes.component';
 import { PreguntaNuevaComponent } from './pregunta-nueva/pregunta-nueva.component';
 
+import {HttpClientModule} from '@angular/common/http';
+import {CommonModule} from '@angular/common';
+import { ResponderPreguntaComponent } from './responder-pregunta/responder-pregunta.component';
+import { BarraInferiorComponent } from './barra-inferior/barra-inferior.component';
+
+
+
 function initilizeKeycloak(keycloak: KeycloakService) {
   return () => keycloak.init({
     config: environment.keycloak
-  })
+  });
 }
- 
+
 
 @NgModule({
   declarations: [
@@ -26,15 +33,19 @@ function initilizeKeycloak(keycloak: KeycloakService) {
     HomeComponent,
     PreguntasComponent,
     CarrilImagenesComponent,
+    ResponderPreguntaComponent,
+    BarraInferiorComponent,
     PreguntaNuevaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    KeycloakAngularModule
+    KeycloakAngularModule,
+    HttpClientModule,
+    CommonModule,
   ],
   providers: [{
-    provide:APP_INITIALIZER,
+    provide: APP_INITIALIZER,
     useFactory: initilizeKeycloak,
     multi: true,
     deps: [KeycloakService]

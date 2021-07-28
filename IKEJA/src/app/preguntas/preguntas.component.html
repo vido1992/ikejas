@@ -1,3 +1,20 @@
+<br><br><br><br>
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div *ngFor="let item of preg" class="card container imagenes-card card-preguntas" >
+      <img src="./assets/Imagenes/pantera.jpg" class="card-img-top" alt="...">
+      <div class="card-body ">
+        <h5 class="card-title">{{item.nombre}}</h5>
+        <h7 class="card-title">{{item.fecha}}</h7>
+        <p class="card-text">{{item.pregunta}}</p>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
 <div>
   <h1>PREGUNTAS</h1>
 </div>

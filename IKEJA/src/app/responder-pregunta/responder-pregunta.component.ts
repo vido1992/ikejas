@@ -1,17 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { JsonPreguntasService } from '../json-preguntas.service';
-import listapreguntas from './listapreguntas.json';
-
 @Component({
-  selector: 'app-preguntas',
-  templateUrl: './preguntas.component.html',
-  styleUrls: ['./preguntas.component.css']
+  selector: 'app-responder-pregunta',
+  templateUrl: './responder-pregunta.component.html',
+  styleUrls: ['./responder-pregunta.component.css']
 })
-export class PreguntasComponent implements OnInit {
+export class ResponderPreguntaComponent implements OnInit {
+
   preg: object = [];
   constructor( private jsonPreguntasService: JsonPreguntasService) { }
-  // tslint:disable-next-line:ban-types
-  preguntasList: any = listapreguntas;
 
   ngOnInit(): void {
     this.jsonPreguntasService.getLocalData().subscribe(data => {
@@ -20,7 +17,6 @@ export class PreguntasComponent implements OnInit {
       this.preg = Object.values(data);
 
     });
-
   }
-}
 
+}

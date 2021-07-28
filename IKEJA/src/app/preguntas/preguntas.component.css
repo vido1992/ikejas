@@ -1,0 +1,11 @@
+.card-preguntas{
+
+  display: flex;
+  float: left;
+}
+.imagenes{
+   width: 25%;
+ }
+.imagenes-card{
+  width: 25%;
+}
