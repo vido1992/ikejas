@@ -5,21 +5,37 @@
       "id":"1",
       "nombre": "David",
       "fecha":  "01/05/2021",
-      "pregunta":"hola como puedo hacer esto?"
+      "pregunta":"cuando comienzan las matriculas?",
+      "respuesta": "las matriculas comienzan el 23 de febrero del 2021"
     },
     {
       "id":"2",
       "nombre":"Juan",
       "fecha": "11/04/2021",
-      "pregunta":"hola como puedo hacer esto?"
+      "pregunta":"Para este semestre van haber clases presenciales?",
+      "respuesta": "para el semestre 2021A no van haber clases presenciales aun"
     },
     {
       "id":"3",
       "nombre":"Alex",
-      "fecha": "19/12/2021",
-      "pregunta":"hola como puedo hacer esto?"
+      "fecha": "19/06/2021",
+      "pregunta":"Donde puedo ver mis notas del semestre?",
+      "respuesta": "Para ver tus notas debes ingresar al saew.epn.edu.ec"
+    },
+    {
+    "id":"4",
+    "nombre": "Alexandra",
+    "fecha":  "28/07/2021",
+    "pregunta":"Aun hay vacunas para este mes?",
+      "respuesta": "las vacunas fueron los dias 23 y 26 del mes de julio"
+  },
+    {
+      "id":"5",
+      "nombre": "Diego",
+      "fecha":  "28/07/2021",
+      "pregunta":"Para realizar una denuncia de un acoso, donde podria hacerlo?",
+      "respuesta": "Debes ir a bienestar estudiantil planta baja de la facultad"
     }
-
   ]
 
 

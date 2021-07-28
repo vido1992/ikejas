@@ -13,6 +13,8 @@ import { CarrilImagenesComponent } from './carril-imagenes/carril-imagenes.compo
 
 import {HttpClientModule} from '@angular/common/http';
 import {CommonModule} from '@angular/common';
+import { ResponderPreguntaComponent } from './responder-pregunta/responder-pregunta.component';
+import { BarraInferiorComponent } from './barra-inferior/barra-inferior.component';
 
 
 
@@ -29,7 +31,9 @@ function initilizeKeycloak(keycloak: KeycloakService) {
     MenuComponent,
     HomeComponent,
     PreguntasComponent,
-    CarrilImagenesComponent
+    CarrilImagenesComponent,
+    ResponderPreguntaComponent,
+    BarraInferiorComponent
   ],
   imports: [
     BrowserModule,
