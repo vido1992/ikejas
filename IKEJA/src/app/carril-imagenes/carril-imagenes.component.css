@@ -1,3 +1,10 @@
 .tamanio-imagenes{
   width: 110% !important;
 }
+.texto{
+  color: black !important;
+}
+.fondo{
+  background-color: black;
+
+}

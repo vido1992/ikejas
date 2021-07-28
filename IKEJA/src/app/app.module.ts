@@ -10,6 +10,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { PreguntasComponent } from './preguntas/preguntas.component';
 import { CarrilImagenesComponent } from './carril-imagenes/carril-imagenes.component';
+import { PreguntaNuevaComponent } from './pregunta-nueva/pregunta-nueva.component';
 
 import {HttpClientModule} from '@angular/common/http';
 import {CommonModule} from '@angular/common';
@@ -33,7 +34,8 @@ function initilizeKeycloak(keycloak: KeycloakService) {
     PreguntasComponent,
     CarrilImagenesComponent,
     ResponderPreguntaComponent,
-    BarraInferiorComponent
+    BarraInferiorComponent,
+    PreguntaNuevaComponent
   ],
   imports: [
     BrowserModule,
