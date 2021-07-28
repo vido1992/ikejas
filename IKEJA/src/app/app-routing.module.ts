@@ -3,10 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './guard/auth.guard';
 import { HomeComponent } from './home/home.component';
 import { PreguntasComponent} from './preguntas/preguntas.component';
-
+import { PreguntaNuevaComponent } from './pregunta-nueva/pregunta-nueva.component';
 const routes: Routes = [
   { path: '', component: HomeComponent , canActivate: [AuthGuard]},
   {path: 'preguntas', component: PreguntasComponent},
+  {path: 'pregunta-nueva', component: PreguntaNuevaComponent},
   { path: '**', redirectTo: '' }
 ];
 
