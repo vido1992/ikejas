@@ -16,6 +16,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {CommonModule} from '@angular/common';
 import { ResponderPreguntaComponent } from './responder-pregunta/responder-pregunta.component';
 import { BarraInferiorComponent } from './barra-inferior/barra-inferior.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -43,6 +45,7 @@ function initilizeKeycloak(keycloak: KeycloakService) {
     KeycloakAngularModule,
     HttpClientModule,
     CommonModule,
+    FormsModule
   ],
   providers: [{
     provide: APP_INITIALIZER,
